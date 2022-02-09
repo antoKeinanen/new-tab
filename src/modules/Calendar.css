@@ -1,0 +1,47 @@
+.calendar {
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.buttons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.day_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--accent);
+  }
+
+a {
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.buttonLink__icon {
+  width: var(--iconsize);
+  height: var(--iconsize);
+  color: var(--fg);
+}
+
+.today{
+  background-color: var(--accent);
+}
+.buttons__link:hover {
+  background-color: var(--accent);
+}
+
+.buttons__link:hover svg {
+  stroke: var(--sfg);
+}
